@@ -1,0 +1,11 @@
+<h1>드디어 첫페이지</h1>
+<a href='post/new'>글 쓰 자</a>
+<br><br>
+<% @posts.each do |p|%>
+ 제목 : <%=p.title%><br>
+ 내용 : <%=p.content%><br>
+ <a href='/post/edit/<%=p.id%>'>[수정]</a>
+ <a href ='/post/destroy/<%=p.id%>'>[삭제]</a>
+ <br><br>
+ <hr>
+ <% end %>

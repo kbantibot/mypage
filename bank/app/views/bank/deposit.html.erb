@@ -1,0 +1,14 @@
+<h1>입금 화면</h1>
+<form action="/bank/deposit_create" method ="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    입금자:</br>
+  <input type="text" name="name" /></br>
+  계좌번호 :</br>
+  <input type="text" name="account" /> </br>
+   은행이름 :</br>
+  <input type="text" name="bank_name" /> </br>
+  입금액 :</br>
+  <input type="text" name="price"/> </br>
+  <input type="submit" value= "입금하기"/>
+</form>
+
